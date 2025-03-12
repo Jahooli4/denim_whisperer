@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "products.category", "fields": {"name": "custom_denim", "friendly_name": "Custom Denim"}}, {"pk": 2, "model": "products.category.parent_category", "fields": {"name": "ready_to_wear_denim", "friendly_name": "Ready to Wear Denim"}}]
