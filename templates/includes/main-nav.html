@@ -19,7 +19,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="" class="dropdown-item">Jeans</a>
                 <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">All Custom Denim</a>
+                <a href="{% url 'products' %}?category=custom_denim" class="dropdown-item">All Custom Denim</a>
             </div>
         </li>
 
@@ -30,7 +30,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="ready-to-wear-link">
                 <a href="" class="dropdown-item">Jeans</a>
                 <a href="" class="dropdown-item">Jackets</a>
-                <a href="" class="dropdown-item">All Ready to Wear</a>
+                <a href="{% url 'products' %}?category=ready_to_wear" class="dropdown-item">All Ready to Wear</a>
             </div>
         </li>
 
