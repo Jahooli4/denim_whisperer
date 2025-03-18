@@ -5,20 +5,20 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
-        </li>
+        </li> 
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="custom denim-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Custom Denim
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=custom_denim&subcategory=jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=custom_denim&subcategory=shorts" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=custom_denim&subcategory=jackets" class="dropdown-item">Jackets</a>
                 <a href="{% url 'products' %}?category=custom_denim" class="dropdown-item">All Custom Denim</a>
             </div>
         </li>
@@ -28,8 +28,8 @@
                 Ready to Wear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ready-to-wear-link">
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=ready_to_wear&subcategory=jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=ready_to_wear&subcategory=jackets" class="dropdown-item">Jackets</a>
                 <a href="{% url 'products' %}?category=ready_to_wear" class="dropdown-item">All Ready to Wear</a>
             </div>
         </li>
