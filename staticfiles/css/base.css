@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/denimshortsrainbow.jpg') no-repeat center center fixed;
+    background: url('staticfiles/media/Picsart_24-06-05_17-32-35-021.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
