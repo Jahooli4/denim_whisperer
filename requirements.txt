@@ -8,7 +8,6 @@ defusedxml==0.7.1
 dj3-cloudinary-storage==0.0.6
 Django==4.0
 django-allauth==0.54.0
-gunicorn==20.1.0
 idna==3.10
 oauthlib==3.2.2
 pillow==10.3.0
@@ -21,3 +20,4 @@ requests-oauthlib==2.0.0
 six==1.17.0
 sqlparse==0.5.3
 urllib3==1.26.20
+whitenoise==6.9.0
