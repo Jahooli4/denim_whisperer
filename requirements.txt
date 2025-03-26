@@ -8,6 +8,7 @@ defusedxml==0.7.1
 dj3-cloudinary-storage==0.0.6
 Django==4.0
 django-allauth==0.54.0
+django-countries==7.2.1
 django-crispy-forms==1.14.0
 gunicorn==20.1.0
 idna==3.10
@@ -19,7 +20,7 @@ python3-openid==3.2.0
 pytz==2025.1
 requests==2.32.3
 requests-oauthlib==2.0.0
-setuptools==77.0.3
+setuptools==75.8.0
 six==1.17.0
 sqlparse==0.5.3
 stripe==11.6.0
