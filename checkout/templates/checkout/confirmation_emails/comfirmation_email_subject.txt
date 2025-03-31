@@ -1,0 +1,1 @@
+The Denim Whisperer - Thanks for your order: {{ order.order_number }}
