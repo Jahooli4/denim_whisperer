@@ -43,3 +43,14 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class ProductGallery(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Product Galleries'
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="gallery")
+    image = CloudinaryField('image', null=True, blank=True)
+
+    def __str__(self):
+        return f"Image for {self.product.name}"

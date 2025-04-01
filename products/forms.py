@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import Product, Category, ProductGallery
 
 
 class ProductForm(forms.ModelForm):
@@ -9,7 +9,10 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
     
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        required=True,
+        error_messages={'required': 'An image is required to add a product.'}
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
