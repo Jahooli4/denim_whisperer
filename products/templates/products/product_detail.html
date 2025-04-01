@@ -19,22 +19,8 @@
                     <img class="card-img-top img-fluid" id="product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
             </div>
-        <!-- {% if product.gallery.all %}
-            <div class="product-gallery mt-3">
+            <div class="product-gallery mt-3 d-inline">
                 <div class="gallery-images d-flex flex-wrap">
-                    {% for image in product.gallery.all %}
-                    <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ image.image.url }}"
-                        aria-label="View gallery image for {{ product.name }}">
-                        <img src="{{ image.image.url }}" alt="Gallery image for {{ product.name }}"
-                            class="img-thumbnail m-1">
-                    </a>
-                    {% endfor %}
-                </div>
-            </div>
-            {% endif %} -->
-
-            <div class="product-gallery mt-3">
-                <div class="gallery-images d-flex flex-wrap d-inline">
                     {% if product.image2 %}
                     <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image2.url }}"
                         aria-label="View gallery image for {{ product.name }}">
@@ -43,11 +29,29 @@
                     </a>
                     {% endif %}
                 </div>
-                <div class="gallery-images d-flex flex-wrap d-inline">
+                <div class="gallery-images d-flex flex-wrap">
                     {% if product.image3 %}
                     <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image3.url }}"
                         aria-label="View gallery image for {{ product.name }}">
                         <img src="{{ product.image3.url }}" alt="Gallery image for {{ product.name }}"
+                            class="img-thumbnail m-1">
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="gallery-images d-flex flex-wrap">
+                    {% if product.image4 %}
+                    <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image4.url }}"
+                        aria-label="View gallery image for {{ product.name }}">
+                        <img src="{{ product.image4.url }}" alt="Gallery image for {{ product.name }}"
+                            class="img-thumbnail m-1">
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="gallery-images d-flex flex-wrap">
+                    {% if product.image5 %}
+                    <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image5.url }}"
+                        aria-label="View gallery image for {{ product.name }}">
+                        <img src="{{ product.image5.url }}" alt="Gallery image for {{ product.name }}"
                             class="img-thumbnail m-1">
                     </a>
                     {% endif %}

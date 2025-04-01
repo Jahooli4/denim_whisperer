@@ -11,8 +11,27 @@ class ProductForm(forms.ModelForm):
     
     image = forms.ImageField(
         required=True,
-        error_messages={'required': 'An image is required to add a product.'}
+        error_messages={'required': 'An image is required to add a product.'},
+        widget=CustomClearableFileInput
     )
+    image2 = forms.ImageField(
+        required=False, 
+        widget=CustomClearableFileInput
+    )
+    image3 = forms.ImageField(
+        required=False, 
+        widget=CustomClearableFileInput
+    )
+    image4 = forms.ImageField(
+        required=False,
+        widget=CustomClearableFileInput
+    )
+    image5 = forms.ImageField(
+        required=False, 
+        widget=CustomClearableFileInput
+    )
+
+
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
