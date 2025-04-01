@@ -324,7 +324,7 @@ a.category-badge > span.badge:hover {
 }
 
 .product-gallery {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
 }
 

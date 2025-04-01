@@ -19,7 +19,7 @@
                     <img class="card-img-top img-fluid" id="product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
             </div>
-        {% if product.gallery.all %}
+        <!-- {% if product.gallery.all %}
             <div class="product-gallery mt-3">
                 <div class="gallery-images d-flex flex-wrap">
                     {% for image in product.gallery.all %}
@@ -31,7 +31,30 @@
                     {% endfor %}
                 </div>
             </div>
-            {% endif %}
+            {% endif %} -->
+
+            <div class="product-gallery mt-3">
+                <div class="gallery-images d-flex flex-wrap d-inline">
+                    {% if product.image2 %}
+                    <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image2.url }}"
+                        aria-label="View gallery image for {{ product.name }}">
+                        <img src="{{ product.image2.url }}" alt="Gallery image for {{ product.name }}"
+                            class="img-thumbnail m-1">
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="gallery-images d-flex flex-wrap d-inline">
+                    {% if product.image3 %}
+                    <a href="javascript:void(0);" class="gallery-thumbnail" data-image="{{ product.image3.url }}"
+                        aria-label="View gallery image for {{ product.name }}">
+                        <img src="{{ product.image3.url }}" alt="Gallery image for {{ product.name }}"
+                            class="img-thumbnail m-1">
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
+
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">

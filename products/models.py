@@ -38,19 +38,12 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=1024, blank=True)
+    # image_url = models.URLField(max_length=1024, blank=True)
     image = CloudinaryField('image', blank=True)
+    image2 = CloudinaryField('image', blank=True)
+    image3 = CloudinaryField('image', blank=True)
+    image4 = CloudinaryField('image', blank=True)
+    image5 = CloudinaryField('image', blank=True)
 
     def __str__(self):
         return self.name
-
-class ProductGallery(models.Model):
-
-    class Meta:
-        verbose_name_plural = 'Product Galleries'
-    product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, related_name="gallery")
-    image = CloudinaryField('image', null=True, blank=True)
-
-    def __str__(self):
-        return f"Image for {self.product.name}"
