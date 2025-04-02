@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'faq',
     'cloudinary',
     'checkout',
     'profiles',
