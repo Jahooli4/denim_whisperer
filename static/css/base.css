@@ -30,6 +30,11 @@ body {
     background-color: #5085ab;
 }
 
+.dropdown-item:hover {
+    background-color: #fafafa;
+    color: #5085ab !important;
+}
+
 .welcome-text {
     background-color: rgba(250, 250, 250, 0.8);
 }
