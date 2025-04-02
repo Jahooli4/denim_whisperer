@@ -13,13 +13,21 @@ body {
     font-family: "Ribeye", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .barrio-regular {
-    font-family: "Barrio", system-ui;
+
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
+
+.barrio-regular {
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
   
 .navbar {
     background-color: #5085ab;
@@ -30,13 +38,22 @@ body {
     background-color: #5085ab;
 }
 
+.account-dropdown-menu {
+    background-color: #fafafa;
+}
+
 .dropdown-item:hover {
     background-color: #fafafa;
     color: #5085ab !important;
 }
 
+.welcome-text-container {
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
 .welcome-text {
-    background-color: rgba(250, 250, 250, 0.8);
+    color: #296894;
+    font-size: 36px;
 }
 
 /* from Bulma */
@@ -56,10 +73,12 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+.shop-btn {
+    text-align: center;
+}
+
+.shop-btn a {
+    background-color: #094d7d;
 }
 
 .btn-black {
@@ -363,10 +382,20 @@ a.category-badge > span.badge:hover {
 
 /* -------- FAQ PAGE -------- */
 
+.faq-background {
+    background-image: url(https://res.cloudinary.com/dhdxnfks1/image/upload/v1743598252/IMG_1164_xwx1he.jpg);
+    background-size: cover;
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
 #faq-accordion-container {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    z-index: 1;
 }
 
 .transition,
@@ -399,13 +428,12 @@ a.category-badge > span.badge:hover {
     display: inline-block;
     position: relative;
     margin: 140px 90px 205px 90px;
-    box-shadow: 0 10px 0 0 #ed8500 inset;
     background-color: #fff;
     color: #000;
     max-width: 900px;
     min-width: 320px;
     padding: 30px;
-    border-radius: 20px
+    border-radius: 10px;
 }
 
 
@@ -502,7 +530,7 @@ a.category-badge > span.badge:hover {
 .faq-ul li i:after {
     content: "";
     position: absolute;
-    background-color: #ed8500;
+    background-color: #5085ab;
     width: 3px;
     height: 9px;
 }
@@ -567,4 +595,6 @@ a.category-badge > span.badge:hover {
         transform: rotateX(0deg);
     }
 }
+
+/* -------- FOOTER -------- */
 

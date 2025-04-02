@@ -1,18 +1,18 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse lexend" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+            <a class="logo-font nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SHOP
             </a>
             <div class="dropdown-menu text-white border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-white">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-white">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item text-white">All Products</a>
+                <a href="{% url 'products' %}?category=custom_denim" class="dropdown-item text-white">Custom Denim</a>
+                <a href="{% url 'products' %}?category=ready_to_wear_denim" class="dropdown-item text-white">Ready to Wear</a>
             </div>
         </li> 
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="custom denim-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font nav-link text-white mr-5" href="#" id="custom denim-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Custom Denim
             </a>
             <div class="dropdown-menu text-white border-0" aria-labelledby="clothing-link">
@@ -24,7 +24,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-white" href="#" id="readtowear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font nav-link mr-5 text-white" href="#" id="readtowear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Ready to Wear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ready-to-wear-link">
@@ -36,7 +36,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="{% url 'faq' %}">
+            <a class="logo-font nav-link text-white" href="{% url 'faq' %}">
                 FAQ
             </a>
         </li>
