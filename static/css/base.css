@@ -6,7 +6,7 @@ body {
     background: url('https://res.cloudinary.com/dhdxnfks1/image/upload/v1742487255/shorts_fvddic.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    
 }
 
 .ribeye-regular {
@@ -24,6 +24,10 @@ body {
 .navbar {
     background-color: #5085ab;
     color: #fafafa;
+}
+
+.dropdown-menu {
+    background-color: #5085ab;
 }
 
 .welcome-text {
@@ -335,8 +339,9 @@ a.category-badge > span.badge:hover {
 }
 
 .product-gallery {
-    display: inline-block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .gallery-thumbnail {
