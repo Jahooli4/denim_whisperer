@@ -87,6 +87,7 @@
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item">Create new product</a>
+                                <a href="{% url 'contact-list' %}" class="dropdown-item">Customer Enquiries</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -149,7 +150,7 @@
     {% endblock %}
 
      <!-- FOOTER -->
-  <div class="container mt-4" id="footer-container">
+  <div class="container-fluid mt-4" id="footer-container">
     <footer class="py-3" id="footer-container-secondary">
       <div class="row">
         <div class="col-6 col-md-3 mb-3">

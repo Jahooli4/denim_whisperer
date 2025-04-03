@@ -82,14 +82,14 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background:#094d7d;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #094d7d !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #094d7d;
 }
 .btn-outline-black:hover,
 .btn-outline-black:active,
@@ -598,7 +598,7 @@ a.category-badge > span.badge:hover {
 
 /* -------- CONTACT PAGES -------- */
 
-.contact-form-container {
+.contact-page-container  {
     padding-top: 164px;
 }
 
