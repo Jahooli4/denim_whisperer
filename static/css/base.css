@@ -598,3 +598,34 @@ a.category-badge > span.badge:hover {
 
 /* -------- FOOTER -------- */
 
+#footer-container {
+    background-color: #094d7d;
+    color: #fafafa;
+    max-width: 100%;
+}
+
+footer a {
+    color: #fafafa;
+}
+
+footer a:hover {
+    color: #fafafa;
+}
+
+.footer-link-heading {
+    font-weight: bold;
+}
+
+/* Social media links */
+#social-icons li {
+    font-size: 2rem;
+    color: #fafafa;
+  }
+  
+  #social-icons li a i {
+    color: #fafafa;
+  }
+  
+  #social-icons li a:hover {
+    color: #aaaaaa;
+  }
