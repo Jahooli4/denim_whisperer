@@ -4,6 +4,9 @@ from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Subcategory
 from django.db.models.functions import Lower
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.views.generic import (DeleteView)
 
 from .forms import ProductForm
 
@@ -159,3 +162,4 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+

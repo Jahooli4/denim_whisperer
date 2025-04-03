@@ -271,6 +271,16 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
+/* -------- MODALS -------- */
+
+.modal-body, .modal-title {
+    color: #000;
+}
+
+.modal-footer {
+    justify-content: space-around;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -390,6 +400,7 @@ a.category-badge > span.badge:hover {
 	top: 0;
 	left: 0;
 	position: fixed;
+    z-index: -1;
 }
 #faq-accordion-container {
     display: flex;
@@ -427,7 +438,7 @@ a.category-badge > span.badge:hover {
     min-height: 0;
     display: inline-block;
     position: relative;
-    margin: 140px 90px 205px 90px;
+    margin: 140px 90px 90px 90px;
     background-color: #fff;
     color: #000;
     max-width: 900px;
@@ -727,6 +738,10 @@ a.category-badge > span.badge:hover {
 }
 
 /* -------- FOOTER -------- */
+
+footer {
+    background-color: #094d7d;
+}
 
 #footer-container {
     background-color: #094d7d;
