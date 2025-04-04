@@ -47,6 +47,10 @@ body {
     color: #5085ab !important;
 }
 
+#mobile-logo {
+    font-size: 30px;
+}
+
 .welcome-text-container {
     background-color: rgba(250, 250, 250, 0.9);
 }

@@ -5,7 +5,7 @@
             <p class="my-0 text-white">Search</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0 text-white" aria-labelledby="mobile-search">
+    <div class="dropdown-menu border-0 w-100 p-2 rounded-0 my-0 text-white" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -24,20 +24,20 @@
     <a class="text-white nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-face-smile fa-lg"></i></div>
-            <p class="my-0">My Account</p>
+            <p class="my-0">Account</p>
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Create new product</a>
-                <a href="{% url 'contact-list' %}" class="dropdown-item">Customer Enquiries</a>
+            <a href="{% url 'add_product' %}" class="dropdown-item text-white">Create new product</a>
+            <a href="{% url 'contact-list' %}" class="dropdown-item text-white">Customer Enquiries</a>
             {% endif %}
-            <a href="" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="" class="dropdown-item text-white">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item text-white">Logout</a>
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item text-white">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item text-white">Login</a>
         {% endif %}
     </div>
 </li>
@@ -55,3 +55,10 @@
         </div>
     </a>
 </li>
+<div class="col-12 d-m-none d-lg-none d-xl-none mt-auto p-0">
+    <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
+        <h2 class="logo-font barrio-regular text-white my-0 text-center" id="mobile-logo">
+        The <strong>Denim</strong> Whisperer
+        </h2>
+    </a>
+</div>
