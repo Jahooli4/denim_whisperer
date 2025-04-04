@@ -153,13 +153,28 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    # listings/views.py
+
+    if request.method == 'POST':
+        # delete the band from the database
+        product.delete()
+        messages.success(request, 'Product deleted!')
+        # redirect to the bands list
+        return redirect('products')
+        
+        
+
+    # no need for an `else` here. If it's a GET request, just continue
+
+
+    return render(
+        request, 'products/confirm_delete_prouct.html', {'product': product}
+    )
+
 
