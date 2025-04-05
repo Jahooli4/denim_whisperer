@@ -133,23 +133,20 @@ def checkout(request):
 
 @login_required
 def checkout_success(request, order_number):
-    # Retrieve the saved information for user profile
+    """
+    Handle successful checkouts
+    """
     save_info = request.session.get('save_info')
-
-    # Retrieve the order based on the order_number
     order = get_object_or_404(Order, order_number=order_number)
 
-    # Check if the authenticated user is the owner of the order
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_profile = profile
+        order.save()
 
-        # Check if the order has a user profile and if not, attach it to the order
-        if not order.user_profile:
-            order.user_profile = profile
-            order.save()
-
-        # If save_info is True, update user profile with order details
-        if save_info and order.user_profile:
+        # Save the user's info
+        if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
@@ -159,77 +156,20 @@ def checkout_success(request, order_number):
                 'default_street_address2': order.street_address2,
                 'default_county': order.county,
             }
-            # Update profile form with the order data
             user_profile_form = UserProfileForm(profile_data, instance=profile)
-
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    # Check if the user profile is the same as the order's associated user profile
-    if request.user.userprofile != order.user:
-        messages.warning(request, 'Sorry, you are not authorised to view this page!')
-        return redirect('home')  # Redirect instead of render for proper flow
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
 
-    # Success message for successful checkout
-    messages.success(request,
-                     f'Order successfully processed! Your order number is {order_number}. A confirmation email will be sent to {order.email}.')
-
-    # Clean up the shopping bag in the session after a successful checkout
     if 'bag' in request.session:
         del request.session['bag']
 
-    # Return the success page with the order context
     template = 'checkout/checkout_success.html'
-    context = {'order': order}
-    return render(request, template, context)
+    context = {
+        'order': order,
+    }
 
-
-# @login_required
-# def checkout_success(request, order_number):
-
-#     # Handle successful checkouts
-
-#     save_info = request.session.get('save_info')
-#     order = get_object_or_404(Order, order_number=order_number)
-    
-#     # if request.user.userprofile == order.user_profile:
-#     if request.user.is_authenticated:
-#         profile = UserProfile.objects.get(user=request.user)
-#         # Attach the user's profile to the order
-#         if not order.user_profile:
-#             order.user_profile = profile
-#             order.save()
-#         # Save the user's info
-#         if order.user_profile:
-            
-#             if save_info:
-#                 profile_data = {
-#                     'default_phone_number': order.phone_number,
-#                     'default_country': order.country,
-#                     'default_postcode': order.postcode,
-#                     'default_town_or_city': order.town_or_city,
-#                     'default_street_address1': order.street_address1,
-#                     'default_street_address2': order.street_address2,
-#                     'default_county': order.county,
-#                 }
-#                 user_profile_form = UserProfileForm(profile_data, instance=profile)
-#                 if user_profile_form.is_valid():
-#                     user_profile_form.save()
-
-#     if request.user.userprofile != order.user_profile:
-#             messages.warning(request, 'Sorry, you are not authorised to view this page!')
-#             return render(request, 'home/index.html')
-
-#     messages.success(request, f'Order successfully processed! \
-#             Your order number is {order_number}. A confirmation \
-#             email will be sent to {order.email}.')
-
-#     if 'bag' in request.session:
-#             del request.session['bag']
-
-#     template = 'checkout/checkout_success.html'
-#     context = {
-#             'order': order,
-#         }
-        
     return render(request, template, context)
