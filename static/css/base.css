@@ -480,7 +480,7 @@ a.category-badge > span.badge:hover {
 }
 
 .faq-h2 {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 34px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -632,6 +632,9 @@ a.category-badge > span.badge:hover {
 
 /* -------- CONTACT PAGES -------- */
 
+.contact-title {
+    font-size: 25px;
+}
 
 #contact-table-container-outer {
     display: flex;
