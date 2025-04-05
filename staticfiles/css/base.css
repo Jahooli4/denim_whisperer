@@ -9,6 +9,16 @@ body {
     
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 .ribeye-regular {
     font-family: "Ribeye", serif;
     font-weight: 400;
@@ -45,6 +55,10 @@ body {
 .dropdown-item:hover {
     background-color: #fafafa;
     color: #5085ab !important;
+}
+
+#mobile-logo {
+    font-size: 30px;
 }
 
 .welcome-text-container {
@@ -120,15 +134,6 @@ body {
     background: #000 !important;
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -336,7 +341,7 @@ a.category-badge > span.badge:hover {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 140px;
     }
 
     body {
@@ -388,6 +393,24 @@ a.category-badge > span.badge:hover {
 
 .gallery-thumbnail:hover {
     transform: scale(1.1);
+}
+
+/* -------- ABOUT PAGE -------- */
+
+.about-background {
+    background-image: url(https://res.cloudinary.com/dhdxnfks1/image/upload/v1743868194/denim_wuw86l.jpg);
+    background-size: cover;
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    z-index: -1;
+}
+
+.about-container {
+    background-color: rgba(38, 92, 131, 0.9);
+    border-radius: 10px;
 }
 
 /* -------- FAQ PAGE -------- */
@@ -609,9 +632,6 @@ a.category-badge > span.badge:hover {
 
 /* -------- CONTACT PAGES -------- */
 
-.contact-page-container  {
-    padding-top: 164px;
-}
 
 #contact-table-container-outer {
     display: flex;
