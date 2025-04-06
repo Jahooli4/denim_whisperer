@@ -19,12 +19,6 @@ body {
 	z-index: -1;
 }
 
-.ribeye-regular {
-    font-family: "Ribeye", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 
 .lexend {
     font-family: "Lexend", sans-serif;
@@ -782,6 +776,13 @@ footer a:hover {
 
 .footer-link-heading {
     font-weight: bold;
+}
+
+/* -------- ERROR PAGES -------- */
+
+.error-number {
+    font-size: 65px;
+    font-weight: bolder;
 }
 
 /* Social media links */
