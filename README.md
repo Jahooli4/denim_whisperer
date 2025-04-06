@@ -16,3 +16,18 @@ After researching into similar existing sites I decided to opt for a simple, int
 
 - [Barrio](https://fonts.google.com/?query=barrio) was used for the site Logo.
 - [Lexend](https://fonts.google.com/specimen/Lexend) was used for the site's main content.
+
+## User stories
+
+User stories can be found [here](https://github.com/users/Jahooli4/projects/5/views/1) via my gitHub project.
+
+## Wireframes
+### Home:
+![Home page]()
+### About:
+![About page]()
+### Blog:
+![Blog page]()
+### Login:
+![Login page]()
+
