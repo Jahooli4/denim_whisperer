@@ -215,6 +215,7 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+    padding: 3px;
 }
 
 /* Allauth form formatting */
@@ -623,6 +624,19 @@ a.category-badge > span.badge:hover {
         transform-origin: top center;
         transform: rotateX(0deg);
     }
+}
+
+/* -------- SHOPPING BAG -------- */
+
+.bag-title {
+    font-size: 25px;
+}
+
+.bag-image {
+    min-width: 50%;
+}
+.bag-info {
+    width: 30%;
 }
 
 /* -------- CONTACT PAGES -------- */
