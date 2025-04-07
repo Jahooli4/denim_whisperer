@@ -404,7 +404,7 @@ a.category-badge > span.badge:hover {
     z-index: -1;
 }
 
-.about-container {
+.about-container, .contact-container {
     background-color: rgba(38, 92, 131, 0.9);
     border-radius: 10px;
 }
@@ -424,7 +424,6 @@ a.category-badge > span.badge:hover {
 #faq-accordion-container {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
     z-index: 1;
 }
 
@@ -457,12 +456,10 @@ a.category-badge > span.badge:hover {
     min-height: 0;
     display: inline-block;
     position: relative;
-    margin: 140px 90px 90px 90px;
     background-color: #fff;
     color: #000;
     max-width: 900px;
     min-width: 320px;
-    padding: 30px;
     border-radius: 10px;
 }
 

@@ -1,23 +1,27 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <div class="faq-background"></div>
-<div class="default-page-container lexend" id="faq-accordion-container">
-    <div id="faq-accordion">
-        <h1 id="faq-heading" class="text-center">Faqs</h1>
-        <ul class="faq-ul">
-        <!-- Populates the FAQ accordion -->
-        {% for faq in faqs %}
-            <li class="faq-li">
-                <input type="checkbox" checked class="faq-input" aria-label="FAQ Dropdown Checkbox">
-                <i></i>
-                <h2 class="faq-h2">{{ faq.question }}</h2>
-                <p class="faq-text">{{ faq.answer }}</p>
-            </li>
-        {% endfor %}
-        </ul>
+<div class="header-container lexend" id="faq-accordion-container">
+    <div class="row">
+        <div class="col-10 col-md-8 mx-auto p-4" id="faq-accordion">
+            <h1 id="faq-heading" class="text-center">Faqs</h1>
+            <ul class="faq-ul">
+                <!-- Populates the FAQ accordion -->
+                {% for faq in faqs %}
+                <li class="faq-li">
+                    <input
+                        type="checkbox"
+                        checked
+                        class="faq-input"
+                        aria-label="FAQ Dropdown Checkbox"
+                    />
+                    <i></i>
+                    <h2 class="faq-h2">{{ faq.question }}</h2>
+                    <p class="faq-text">{{ faq.answer }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 
