@@ -33,6 +33,9 @@ User stories can be found [here](https://github.com/users/Jahooli4/projects/5/vi
 ### Bag:
 ![Bag page](documentation/wireframes/bag.png)
 
+## User stories
+
+User stories can be found [here](https://github.com/users/Jahooli4/projects/5) via my gitHub project.
 
 ## Existing Features - Scope plane:
 ### Home page
@@ -66,6 +69,7 @@ The product detail page features all the essential info a user could wish to kno
 
 ![Product detail](documentation/features/product-detail.png)
 
+### ADMIN ONLY - Product detail CRUD:
 The product detail page also displays the edit/delete buttons for admin users. The delete button takes the user to an 'are you sure you want to delte' page to avoid accidental deletions and the edit button displays the product management form where the admin may edit or update the product details.
 
 ![Edit/delete](documentation/features/edit-delete.png)
@@ -76,7 +80,7 @@ The contact page features a form that users may fill out to contact the site own
 
 ![Contact page](documentation/features/contact.png)
 
-### Customer enquiry list
+### ADMIN ONLY - Customer enquiry list
 Visible only to admin, this page displays the list of contact requests submitted by users to the site user. As an admin user you are able to reply to the user's query using the form. Upon submission the form sends an email back to the user.
 
 ![Customer enquiry list](documentation/enquiry-list.png)
@@ -133,4 +137,25 @@ Provides the user with a form to fill out with their shipping and billing inform
 Confirms to the user that their order has been successfully placed. The page lists the items the user has ordered as well as the user's details for reference.
 
 ![Profile page](documentation/features/success.png)
+
+### Custom error pages
+I have styled some custom error pages that display for the user, rather that generic ones. This keeps the style continuity of the site.
+
+![Custom error page](documentation/features/custom-error.png)
+
+## Future features
+
+### Newsletter subscription
+I would like to add an email newsletter service for users to be able to sign up to so they can stay up to date with the latest offers from the shop.
+
+### Custom confirmation emails
+Given more time I would like to have added my own styled templates for the email confirmation emails.
+
+### Shipping options
+I think it would be a good additional feature to add a shipping API of sorts to my store to allow users to sellect from different shipping providers. They could also be given a shipping price based on the calculated weight of their order and not just a flat rate. 
+
+## Database design
+During the planning stages of this project I made an Entity Relationship Diagram to help visualise the database models and the way they relate to one another.
+
+![dbd database design](documentation/features/dbd-database.png)
 

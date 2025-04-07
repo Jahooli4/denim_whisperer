@@ -5,7 +5,7 @@
 <div class="overlay"></div>
     <div class="header-container container">
         <div class="content-section custom-form-outer-container">
-            <h1 class="default-page-header">Delete Message</h1>
+            <h1 class="text-center mx-auto">Delete Message</h1>
             <form method="POST">
                 {% csrf_token %}
                 <fieldset class="form-group">
@@ -15,7 +15,7 @@
                     <!-- DELETES THE CONTACT MESSAGE -->
                     <button class="btn btn-danger" id="message-delete-button" type="submit">Yes, I'm sure</button>
                     <!-- RETURNS TO MESSAGE DETAILS PAGE -->
-                    <a class="btn black-button" href="{% url 'contact-update' object.id %}">No, go back</a>
+                    <a class="btn btn-black" href="{% url 'contact-update' object.id %}">No, go back</a>
                 </div>
             </form>
         </div>
