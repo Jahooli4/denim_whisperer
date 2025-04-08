@@ -222,7 +222,7 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #094d7d; /* text-secondary */
+    color: black; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -269,7 +269,7 @@ a.category-badge > span.badge:hover {
 }
 
 .allauth-form-inner-content a {
-	color: #036cb7; /* text-info */
+	color: #027ed6; /* text-info */
 }
 
 /* -------- MODALS -------- */
