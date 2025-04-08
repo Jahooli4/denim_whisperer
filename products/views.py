@@ -1,12 +1,14 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404
+    )
 from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Subcategory
 from django.db.models.functions import Lower
-from django.contrib.messages.views import SuccessMessageMixin
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.views.generic import (DeleteView)
 
 from .forms import ProductForm
 
@@ -42,7 +44,7 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-        
+
         if 'subcategory' in request.GET:
             subcategories = request.GET['subcategory'].split(',')
             products = products.filter(subcategory__in=subcategories)
@@ -52,10 +54,11 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query) # noqa
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -100,13 +103,14 @@ def add_product(request):
         else:
             if 'image' not in request.FILES:
                 messages.error(
-                    request, 'Please add an image to the product listing to continue.')
+                    request,
+                    'Please add an image to the product listing to continue.')
             messages.error(
                 request,
                 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -133,7 +137,8 @@ def edit_product(request, product_id):
         else:
             if 'image' not in request.FILES:
                 messages.error(
-                    request, 'Please add an image to the product listing to continue.')
+                    request,
+                    'Please add an image to the product listing to continue.')
             messages.error(
                 request,
                 'Failed to add product. Please ensure the form is valid.')
@@ -167,14 +172,8 @@ def delete_product(request, product_id):
         messages.success(request, 'Product deleted!')
         # redirect to the bands list
         return redirect('products')
-        
-        
 
     # no need for an `else` here. If it's a GET request, just continue
-
-
     return render(
         request, 'products/confirm_delete_prouct.html', {'product': product}
     )
-
-

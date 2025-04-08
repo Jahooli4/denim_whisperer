@@ -11,9 +11,11 @@
 {% endblock %}
 
 {% block content %}
+<!-- WHITE BACKGROUND -->
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
+            <!-- TITLE -->
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Shopping Bag</h2>
@@ -35,6 +37,7 @@
                                     <th scope="col" class="d-none d-md-block">Subtotal</th>
                                 </tr>
                             </thead>
+                            <!-- ITERATES THROUGH ITEMS IN BAG -->
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-1 bag-image d-none d-md-block">

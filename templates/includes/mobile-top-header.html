@@ -8,7 +8,7 @@
         aria-haspopup="true"
         aria-expanded="false"
     >
-    <!-------------- SEARCH BAR --------------->
+    <!-- SEARCH BAR -->
         <div class="text-center">
             <div class="text-white">
                 <i class="fas fa-search fa-lg text-white"></i>
@@ -56,7 +56,7 @@
             <p class="my-0">Account</p>
         </div>
     </a>
-    <!-------------- SHOWS USER LINKS BASED ON USER TYPE --------------->
+    <!-- SHOWS USER LINKS BASED ON USER TYPE -->
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %} 
         {% if request.user.is_superuser %}
@@ -83,7 +83,7 @@
         {% endif %}
     </div>
 </li>
-<!-------------- BASKET --------------->
+<!-- BASKET -->
 <li class="list-inline-item text-white mx-0">
     <a
         class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none"
@@ -99,7 +99,7 @@
         </div>
     </a>
 </li>
-<!-------------- LOGO --------------->
+<!-- LOGO -->
 <div class="col-12 d-m-none d-lg-none d-xl-none mt-auto p-0">
     <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
         <h2

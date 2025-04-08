@@ -7,9 +7,8 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     min-height: 100vh;
-    
 }
-
+/* WHITE PAGE BACKGROUND */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -19,21 +18,20 @@ body {
 	background: white;
 	z-index: -1;
 }
-
-
+/* FONTS */
 .lexend {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
-
+/* LOGO FONT */
 .barrio-regular {
     font-family: "Barrio", system-ui;
     font-weight: 400;
     font-style: normal;
 }
-  
+/* SITE NAV BAR */
 .navbar {
     background-color: #346a91;
     color: #fafafa;
@@ -93,7 +91,7 @@ body {
 .shop-btn a {
     background-color: #094d7d;
 }
-
+/* CUSTOM BUTTONS */
 .btn-black {
     background:#094d7d;
     color: white;
@@ -132,7 +130,6 @@ body {
 .bg-black {
     background: #000 !important;
 }
-
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -380,7 +377,6 @@ a.category-badge > span.badge:hover {
 .product-gallery {
     display: flex;
     flex-direction: row;
-
 }
 
 .gallery-thumbnail {
@@ -425,6 +421,7 @@ a.category-badge > span.badge:hover {
 	position: fixed;
     z-index: -1;
 }
+
 #faq-accordion-container {
     display: flex;
     justify-content: center;
@@ -466,7 +463,6 @@ a.category-badge > span.badge:hover {
     min-width: 320px;
     border-radius: 10px;
 }
-
 
 #faq-heading {
     text-transform: uppercase;
@@ -815,5 +811,4 @@ footer a:hover {
   #social-icons li a:hover {
     color: #aaaaaa;
   }
-
   

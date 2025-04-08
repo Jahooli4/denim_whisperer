@@ -5,41 +5,37 @@
   <head>
     {% block meta %}
     <!-- META TAGS -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="An online clothing shop selling recycled vintage denim garments">
     {% endblock %}
     {% block extra_meta %}
     {% endblock %}
     {% block corecss %}
-    <!-------------- BOOTSTRAP --------------->
-    <link
-      rel="stylesheet"
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
       />
-    <!-------------- FAVICON --------------->
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="static/media/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/media/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/media/favicon-16x16.png">
     <link rel="manifest" href="static/media/site.webmanifest">
-    <!-------------- GOOGLE FONTS --------------->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <!-------------- BASE.CSS --------------->
+    <!-- BASE.CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     {% endblock %}
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
-    <!-------------- JS --------------->
+    <!-- JS -->
     <script src="https://kit.fontawesome.com/e6d5374a5e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -54,10 +50,10 @@
 
   <title>The Denim Whisperer{% block extra_title %}{% endblock %}</title>
   </head>
-  <!-------------- BODY --------------->
+  <!-- BODY -->
   <body>
     <header class="container-fluid fixed-top">
-      <!-------------- NAV BAR --------------->
+      <!-- NAV BAR -->
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
           <form method="GET" action="{% url 'products' %}">
@@ -83,13 +79,13 @@
         </div>
         <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
           <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
-            <!-------------- LOGO --------------->
+            <!-- LOGO -->
             <h2 class="logo-font barrio-regular text-black my-0 text-center">
               The <strong>Denim</strong> Whisperer
             </h2>
           </a>
         </div>
-        <!-------------- ACCOUNT/BASKET MENU --------------->
+        <!-- ACCOUNT/BASKET MENU -->
         <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
@@ -98,7 +94,7 @@
                      <p class="my-0">My Account</p>
                   </div>
               </a>
-              <!-------------- CHECKS WHICH ACCOUNT LINKS TO SHOW BASED ON USER --------------->
+              <!-- CHECKS WHICH ACCOUNT LINKS TO SHOW BASED ON USER -->
                 <div class="account-dropdown-menu dropdown-menu border-0" aria-labelledby="user-options">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
@@ -137,13 +133,13 @@
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-------------- MOBILE NAV GOES HERE --------------->
+          <!-- MOBILE NAV GOES HERE -->
           {% include 'includes/mobile-top-header.html' %}
           {% include 'includes/main-nav.html' %}
         </nav>
       </div>
     </header>
-    <!-------------- MESSAGES CONTAINER --------------->
+    <!-- MESSAGES CONTAINER -->
     {% if messages %}
     <div class="message-container">
       {% for message in messages %}
@@ -230,7 +226,7 @@
       </div>
 
     </footer>
-<!-------------- POST LOAD JS --------------->
+<!-- POST LOAD JS -->
     {% block postloadjs %}
     <script type="text/javascript">
       $('.toast').toast('show');
