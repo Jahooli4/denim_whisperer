@@ -189,4 +189,5 @@ def checkout_success(request, order_number):
         }
 
         return render(request, template, context)
-    return print('Working')
+
+    messages.error(request, "You must be logged in to view this page!")
