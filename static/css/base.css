@@ -266,7 +266,7 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
     background-color: #222;
-    border-color: #222;
+    border-color: #0c0c0c;
 }
 
 .allauth-form-inner-content a {
@@ -316,7 +316,7 @@ a.category-badge > span.badge:hover {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #d32b3c;
     border-radius: 0;
 }
 
