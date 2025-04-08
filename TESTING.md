@@ -67,13 +67,16 @@ I have used [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate a
 | urls.py | ![screenshot](documentation/python-validation/about/about-views.png) | Pass: No Errors |
 
 #### BAG APP
+| File | Screenshot | Notes |
+| --- | --- | --- |
 | apps.py | ![screenshot](documentation/python-validation/bag/bag-apps.png) | Pass: No Errors |
 | contexts.py | ![screenshot](documentation/python-validation/bag/bag-contexts.png) | Pass: No Errors |
 | urls.py | ![screenshot](documentation/python-validation/bag/bag-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](documentation/python-validation/bag/bag-views.png) | Pass: No Errors |
 
 #### CHECKOUT APP
-
+| File | Screenshot | Notes |
+| --- | --- | --- |
 | admin.py | ![screenshot](documentation/python-validation/checkout/checkout-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](documentation/python-validation/checkout/checkout-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](documentation/python-validation/checkout/checkout-forms.png) | Pass: No Errors |
@@ -85,7 +88,8 @@ I have used [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate a
 | webhooks.py | ![screenshot](documentation/python-validation/checkout/checkout-webhooks.png) | Pass: No Errors |
 
 #### CONTACT APP
-
+| File | Screenshot | Notes |
+| --- | --- | --- |
 | admin.py | ![screenshot](documentation/python-validation/contact/contact-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](documentation/python-validation/contact/contact-apps.png) | Pass: No Errors |
 | models.py | ![screenshot](documentation/python-validation/contact/contact-models.png) | Pass: No Errors |
@@ -93,8 +97,44 @@ I have used [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate a
 | views.py | ![screenshot](documentation/python-validation/contact/contact-views.png) | Pass: No Errors |
 
 #### DENIM_WHISPERER APP
-
+| File | Screenshot | Notes |
+| --- | --- | --- |
 | asgi.py | ![screenshot](documentation/python-validation/denim_whisp/denim-asgi.png) | Pass: No Errors |
 | settings.py | ![screenshot](documentation/python-validation/denim_whisp/denim-settings.png) | Pass: No Errors |
 | urls.py | ![screenshot](documentation/python-validation/denim_whisp/denim-urls.png) | Pass: No Errors |
 | wsgi.py | ![screenshot](documentation/python-validation/denim_whisp/denim-wsgi.png) | Pass: No Errors |
+
+#### FAQ APP
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](documentation/python-validation/faq/faq-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](documentation/python-validation/faq/faq-apps.png) | Pass: No Errors |
+| models.py | ![screenshot](documentation/python-validation/faq/faq-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](documentation/python-validation/faq/faq-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](documentation/python-validation/faq/faq-views.png) | Pass: No Errors |
+
+#### HOME APP
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| apps.py | ![screenshot](documentation/python-validation/home/home-apps.png) | Pass: No Errors |
+| urls.py | ![screenshot](documentation/python-validation/home/home-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](documentation/python-validation/home/home-views.png) | Pass: No Errors |
+
+#### PRODUCTS APP
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](documentation/python-validation/products/products-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](documentation/python-validation/products/products-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](documentation/python-validation/products/products-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](documentation/python-validation/products/products-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](documentation/python-validation/products/products-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](documentation/python-validation/products/products-views.png) | Pass: No Errors |
+
+#### PROFILES APP
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| apps.py | ![screenshot](documentation/python-validation/profiles/profiles-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](documentation/python-validation/profiles/profiles-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](documentation/python-validation/profiles/profiles-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](documentation/python-validation/profiles/profiles-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](documentation/python-validation/profiles/profiles-views.png) | Pass: No Errors |
