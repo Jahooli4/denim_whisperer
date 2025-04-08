@@ -1,5 +1,5 @@
 
-<li class="list-inline-item mx-0">
+<div class="list-inline-item mx-0">
     <a
         class="text-white nav-link d-block d-lg-none"
         href="#"
@@ -41,8 +41,8 @@
             </div>
         </form>
     </div>
-</li>
-<li class="list-inline-item dropdown mx-0">
+</div>
+<div class="list-inline-item dropdown mx-0">
     <a
         class="text-white nav-link d-block d-lg-none"
         href="#"
@@ -82,9 +82,9 @@
         </a>
         {% endif %}
     </div>
-</li>
+</div>
 <!-- BASKET -->
-<li class="list-inline-item text-white mx-0">
+<div class="list-inline-item text-white mx-0">
     <a
         class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_bag' %}"
@@ -98,14 +98,11 @@
             </p>
         </div>
     </a>
-</li>
+</div>
 <!-- LOGO -->
 <div class="col-12 d-m-none d-lg-none d-xl-none mt-auto p-0">
     <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
-        <h2
-            class="logo-font barrio-regular text-white my-0 text-center"
-            id="mobile-logo"
-        >
+        <h2 class="logo-font barrio-regular text-white my-0 text-center" id="mobile-logo">
             The <strong>Denim</strong> Whisperer
         </h2>
     </a>
