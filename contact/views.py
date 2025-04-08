@@ -12,7 +12,6 @@ from django.conf import settings
 from django.views.generic import (
     CreateView,
     ListView,
-    DetailView,
     UpdateView,
     DeleteView
 )
@@ -120,7 +119,6 @@ class ContactDeleteView(
 
     # Checks if user is staff
     def test_func(self):
-        contact = self.get_object()
         if self.request.user.is_staff:
             return True
         return False
