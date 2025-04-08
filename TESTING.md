@@ -138,3 +138,28 @@ I have used [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate a
 | models.py | ![screenshot](documentation/python-validation/profiles/profiles-models.png) | Pass: No Errors |
 | urls.py | ![screenshot](documentation/python-validation/profiles/profiles-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](documentation/python-validation/profiles/profiles-views.png) | Pass: No Errors |
+
+
+## Lighthouse testing
+
+I have tested my deployed site using the Lighthouse Audit tool.
+
+On all pages, Lighthouse is flagging a warning 'Issues were logged in the Issues panel in Chrome Devtools'. This is caused by the built-in Stripe element used by the site.
+
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| Home | ![screenshot]() | Minor Warnings |
+| Products | ![screenshot]() | Minor Warnings |
+| Product detail | ![screenshot]() | Minor Warnings |
+| Product add | ![screenshot]() | Minor Warnings |
+| Product edit | ![screenshot]() | Minor Warnings |
+| Product delete | ![screenshot]() | Minor Warnings |
+| About | ![screenshot]() | Minor Warnings |
+| Contact | ![screenshot]() | Minor Warnings |
+| Customer enquiries | ![screenshot]() | Minor Warnings |
+| Delete message | ![screenshot]() | Minor Warnings |
+| FAQ | ![screenshot]() | Minor Warnings |
+| Register | ![screenshot]() | Minor Warnings |
+| Login | ![screenshot]() | Minor Warnings |
+| Logout | ![screenshot]() | Minor Warnings |
+
