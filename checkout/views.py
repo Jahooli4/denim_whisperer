@@ -155,7 +155,7 @@ def checkout_success(request, order_number):
     if order.user_profile == profile:
 
         if request.user.is_authenticated:
-        
+
             # Attach the user's profile to the order
             order.user_profile = profile
             order.save()
@@ -171,7 +171,8 @@ def checkout_success(request, order_number):
                     'default_street_address2': order.street_address2,
                     'default_county': order.county,
                 }
-                user_profile_form = UserProfileForm(profile_data, instance=profile)
+                user_profile_form = UserProfileForm(profile_data,
+                                                    instance=profile)
                 if user_profile_form.is_valid():
                     user_profile_form.save()
 
