@@ -159,3 +159,6 @@ During the planning stages of this project I made an Entity Relationship Diagram
 
 ![dbd database design](documentation/features/dbd-database.png)
 
+## Testing
+
+Find my full testing file [here](TESTING.md) file.
