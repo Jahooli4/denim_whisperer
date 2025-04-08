@@ -148,11 +148,10 @@ On all pages, Lighthouse is flagging a warning 'Issues were logged in the Issues
 
 | Page | Screenshot | Notes |
 | --- | --- | --- |
-| Home | ![screenshot]() | Minor Warnings |
-| Products | ![screenshot]() | Minor Warnings |
-| Product detail | ![screenshot]() | Minor Warnings |
-| Product add | ![screenshot]() | Minor Warnings |
-| Product edit | ![screenshot]() | Minor Warnings |
+| Home | ![screenshot](documentation/lighthouse-testing/lh-home.png) | Minor Warnings |
+| Products | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
+| Product detail | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
+| Product add | ![screenshot](documentation/lighthouse-testing/lh-addproduct.png) | Minor Warnings |
 | Product delete | ![screenshot]() | Minor Warnings |
 | About | ![screenshot]() | Minor Warnings |
 | Contact | ![screenshot]() | Minor Warnings |
