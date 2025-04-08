@@ -10,21 +10,25 @@
 {% endblock %}
 
 {% block content %}
+<!-------------- WHITE BACKGROUND --------------->
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <!-------------- BACK BUTTON --------------->
             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
                 <span class="text-uppercase">All products</span>
             </a>
+            <!-------------- PRODUCT IMAGE --------------->
             <div class="image-container my-5">
                 <a href="{{ product.image.url }}" id="product-image-link" target="_blank">
                     <img class="card-img-top img-fluid" id="product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
             </div>
+            <!-------------- IMAGE GALLERY --------------->
             <div class="row product-gallery mt-3">
                 <div class="col gallery-images d-flex flex-wrap">
                     {% if product.image2 %}
@@ -63,9 +67,8 @@
                     {% endif %}
                 </div>
             </div>
-
-
         </div>
+        <!-------------- PRODUCT INFO --------------->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
@@ -77,11 +80,7 @@
                     </a>
                 </p>
                 {% endif %}
-                {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                {% else %}
-                <small class="text-muted">No Rating</small>
-                {% endif %}
+                <!-------------- SHOWS EDIT/DELETE BUTTONS TO SUPERUSERS --------------->
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 

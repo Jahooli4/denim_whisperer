@@ -10,14 +10,17 @@
 {% endblock %}
 
 {% block content %}
+<!-------------- WHITE BACKGROUND --------------->
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
+                <!-------------- TITLE --------------->
                 <h2 class="logo-font">Products</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
+        <!-------------- SORT DROPDOWN --------------->
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
@@ -43,6 +46,7 @@
                         </p>
                     </div>
                 </div>
+                <!-------------- ITERATES THROUGH ALL PRODUCTS AND DISPLAYS A CARD --------------->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -69,6 +73,7 @@
                                 </div>
                             </div>
                         </div>
+        <!-------------- DETERMINES HOW MANY PRODUCTS PER ROW ON DIFFERENT DEVICE SIZES --------------->
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>

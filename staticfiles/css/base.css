@@ -35,7 +35,7 @@ body {
 }
   
 .navbar {
-    background-color: #5085ab;
+    background-color: #346a91;
     color: #fafafa;
 }
 
@@ -80,6 +80,10 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.shop-all-text {
+    font-size: 26px;
 }
 
 .shop-btn {

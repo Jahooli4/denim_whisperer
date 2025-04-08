@@ -19,7 +19,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-------------- PRODUCT FORM --------------->
         <div class="row">
             <div class="col-12 col-md-8 mx-auto">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
@@ -40,7 +40,7 @@
         </div>
     </div>
 {% endblock %}
-
+<!-------------- REPLACES IMAGE --------------->
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
