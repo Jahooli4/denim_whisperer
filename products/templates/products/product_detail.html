@@ -83,7 +83,7 @@
                 <!-- SHOWS EDIT/DELETE BUTTONS TO SUPERUSERS -->
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                    <a href="{% url 'edit_product' product.id %}" class="bg-black text-white p-1">Edit</a> | 
                     <a class="text-danger" id="delete-button" href="{% url 'delete_product' product.id %}">Delete</a>
                  </small>
                 {% endif %}
