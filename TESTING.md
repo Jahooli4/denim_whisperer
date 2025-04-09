@@ -183,8 +183,15 @@ Defensive programming was manually tested with the below user acceptance testing
 | Product detail - | Choose a size | Chosen size is selected | PASS |
 | Product detail - | Add to bag | Item adds to bag in chosen size and quantity, success message with bag preview displays. | PASS |
 | Product detail - | Edit/delete buttons | Only visible a an admin user | PASS |
-| About page - | Read through text | text is legible and clear on all screen sizes | PASS |
+| Bag page - | Click bag icon | Bag page loads with all items user has added to bag. Total price is correct | PASS |
+| Bag page - | Click checkout | Checkout page loads | PASS |
+| Checkout page - | Enter details and checkout | Order loading page comes up and checkout success page loads | PASS |
+| Checkout page - | Enter incorrect details or leave a field blank | Error message on incorrect or blank field | PASS |
+|About page - | Read through text | text is legible and clear on all screen sizes | PASS |
 | Contact page - | Fill out and submit form | Form submits and message is saved in the database | PASS|
+| Contact page ADMIN - | Click customer enquiries from dropdown menu. | List of user enquiries is displayed | PASS|
+| Contact page ADMIN - | Click on one of the customer enquiries. | Cusomter message is displayed | PASS|
+| Contact page ADMIN - | Reply to customer message | Reply is sent to user via email | PASS|
 | FAQ page - | Click arrows on the accordian | All arrows reveal anwer in drop down and retract when clicked again | PASS|
 | Footer - Social media icons | Click each one, test on each page. | Each link should change colour when hovered over and open in a new tab when clicked. | PASS |
 | Register page - | Submit form with empty fields | Form does not submit, error displays | PASS|
@@ -194,11 +201,28 @@ Defensive programming was manually tested with the below user acceptance testing
 | Edit product - | Click edit button | Takes user to edit product page (admin only) | PASS|
 | Delete product button - | click delete button | Takes you to product delete page. | PASS|
 | Register page - | Fill out the registration form. | New profile should be successfully created. | PASS |
-| Deafault profile image - | Create new account without a profile picture. | Account should be created with default profile image. | PASS |
 | Login page - | Login with invalid user details. | Access denied. | PASS |
 | Login page - | Login with valid user details. | Access granted and redirected to the home page. | PASS |
-| Profile page - | Load profile page as a logged in user. | User info is displayed correctly. | PASS| 
-| Profile page - | Click 'edit profile button. | Edit profile form is displayed. | PASS| 
-| Profile page - | Fill out edit profile form and submit. | User info is updated correctly. | PASS| 
+| Profile page - | Load profile page as a logged in user. | User info and order history is displayed correctly. | PASS| 
+| Profile page - | Edit fields in profile form and click update. | Profile is updated. | PASS| 
+| Profile page - | Click on past order | Past order confirmation is displayed | PASS| 
 | Logout page - | Click logout link. | User is logged out correctly and message displays confirming this. | PASS| 
 | Responsiveness - UX | Resize site for all device sizes. | Check that images/text/other elements resize as expected, text should be readable and elements should all be visible and not overlap randomly. Repeat for every page. | PASS|
+
+## Browser testing
+| Browser:     | Screenshot:                       | Notes:  | 
+|:----------|:------------------------------------------------------|:--------|
+| Chrome | ![chrome test](documentation/browser-testing/chrometest.png) | No errors |
+| Firefox | ![firefox test](documentation/browser-testing/safaritest.png) | No errors |
+| Safari | ![safari test](documentation/browser-testing/safaritest.png) | No errors |
+
+## Bugs
+
+### Nav bar filtering not working
+Solution: Capital letter in admin panel.
+
+![filter bug](documentation/bugs/bug.png)
+![filter bug](documentation/bugs/bug1.png)
+
+### Hamburger menu wouldnt change colour
+Solution: Added nav-bar-light class.
