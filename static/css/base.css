@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
+
+main {
+    flex: 1 0 auto;
+  }
+
 /* WHITE PAGE BACKGROUND */
 .overlay {
 	height: 100%;
