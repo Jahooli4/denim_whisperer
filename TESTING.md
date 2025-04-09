@@ -172,6 +172,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | Feature being tested:| Steps                                | Expected outcome  | Pass/Fail |
 |:---------------------|:-------------------------------------|:------------------|-----|
 | Navigation - Logo | Click the logo on every page. | The logo should link the user back to the homepage, should be active on every page. | PASS |
+| Navigation - Site links | Click each link on every page. | User should be navigated to relevant page. | PASS |
+| Navigation - Search | Search using a word or words | Products featuring those words should display. | PASS |
+| Navigation - Account | Click the account drop down menu when; logged in, logged out, logged in as superuser. | Account links should change based on user and logged in status. | PASS |
 | Home page - UX | Read through the text. | The site purpose should be obvious to any user from reading the front page. | PASS |
 | About page - | Read over text. | Text should be legible and make sense. | PASS |
 | Shop/products page - | Load the products page | Products per line should vary based on screen size | PASS |
@@ -179,11 +182,15 @@ Defensive programming was manually tested with the below user acceptance testing
 | Product detail - | UX | Information displays clearly. | PASS |
 | Product detail - | Choose a size | Chosen size is selected | PASS |
 | Product detail - | Add to bag | Item adds to bag in chosen size and quantity, success message with bag preview displays. | PASS |
-| About page - | Choose a size | Chosen size is selected | PASS |
+| Product detail - | Edit/delete buttons | Only visible a an admin user | PASS |
+| About page - | Read through text | text is legible and clear on all screen sizes | PASS |
+| Contact page - | Fill out and submit form | Form submits and message is saved in the database | PASS|
+| FAQ page - | Click arrows on the accordian | All arrows reveal anwer in drop down and retract when clicked again | PASS|
 | Footer - Social media icons | Click each one, test on each page. | Each link should change colour when hovered over and open in a new tab when clicked. | PASS |
-| Submit a spell page - | Fill out the spell submission page | Post is successfully created and success message displayed | PASS|
-| Submit a spell page - | Submit form without header image. | Post is successfully created and default header image applied. | PASS|
-| Post detail - | Load an idividual post. | Edit/delete buttons only visible to the post author. | PASS|
+| Register page - | Submit form with empty fields | Form does not submit, error displays | PASS|
+| Register page - | Enter user details and submit form | Form submits and details are saved to the database. | PASS|
+| Login - | Enter invalid details. | Does not log user in and error prompts. | PASS|
+| Login - | Enter invalid details. | Does not log user in and error prompts. | PASS|
 | Edit post button - | Alter post fields. | Post is successfully updated and success message displayed | PASS|
 | Delete post button - | Delete post. | Post is successfully deleted and confirmation message displayed | PASS|
 | Register page - | Fill out the registration form. | New profile should be successfully created. | PASS |
