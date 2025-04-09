@@ -6,7 +6,9 @@ body {
     background: url('https://res.cloudinary.com/dhdxnfks1/image/upload/v1742487255/shorts_fvddic.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    display: flex;
     min-height: 100vh;
+    flex-direction: column;
 }
 /* WHITE PAGE BACKGROUND */
 .overlay {

@@ -190,9 +190,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | Register page - | Submit form with empty fields | Form does not submit, error displays | PASS|
 | Register page - | Enter user details and submit form | Form submits and details are saved to the database. | PASS|
 | Login - | Enter invalid details. | Does not log user in and error prompts. | PASS|
-| Login - | Enter invalid details. | Does not log user in and error prompts. | PASS|
-| Edit post button - | Alter post fields. | Post is successfully updated and success message displayed | PASS|
-| Delete post button - | Delete post. | Post is successfully deleted and confirmation message displayed | PASS|
+| Login - | Enter valid details. | Logs user in | PASS|
+| Edit product - | Click edit button | Takes user to edit product page (admin only) | PASS|
+| Delete product button - | click delete button | Takes you to product delete page. | PASS|
 | Register page - | Fill out the registration form. | New profile should be successfully created. | PASS |
 | Deafault profile image - | Create new account without a profile picture. | Account should be created with default profile image. | PASS |
 | Login page - | Login with invalid user details. | Access denied. | PASS |
