@@ -6,7 +6,9 @@ body {
     background: url('https://res.cloudinary.com/dhdxnfks1/image/upload/v1742487255/shorts_fvddic.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    display: flex;
     min-height: 100vh;
+    flex-direction: column;
 }
 /* WHITE PAGE BACKGROUND */
 .overlay {
@@ -98,7 +100,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: #094d7d !important;
+    color: #094d7d !important; /* use important to override link colors for <a> elements */
     border: 1px solid #094d7d;
 }
 .btn-outline-black:hover,
@@ -269,7 +271,7 @@ a.category-badge > span.badge:hover {
 }
 
 .allauth-form-inner-content a {
-	color: #027ed6; /* text-info */
+	color: #0216cb; /* text-info */
 }
 
 /* -------- MODALS -------- */
@@ -282,7 +284,7 @@ a.category-badge > span.badge:hover {
     justify-content: space-around;
 }
 
-/* ----------------------- Media Queries */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
