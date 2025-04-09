@@ -152,13 +152,14 @@ On all pages, Lighthouse is flagging a warning 'Issues were logged in the Issues
 | Products | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
 | Product detail | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
 | Product add | ![screenshot](documentation/lighthouse-testing/lh-addproduct.png) | Minor Warnings |
-| Product delete | ![screenshot]() | Minor Warnings |
-| About | ![screenshot]() | Minor Warnings |
-| Contact | ![screenshot]() | Minor Warnings |
-| Customer enquiries | ![screenshot]() | Minor Warnings |
-| Delete message | ![screenshot]() | Minor Warnings |
-| FAQ | ![screenshot]() | Minor Warnings |
-| Register | ![screenshot]() | Minor Warnings |
-| Login | ![screenshot]() | Minor Warnings |
-| Logout | ![screenshot]() | Minor Warnings |
-
+| Product delete | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
+| About | ![screenshot](documentation/lighthouse-testing/lh-about.png) | Minor Warnings |
+| Contact | ![screenshot](documentation/lighthouse-testing/lh-contact.png) | Minor Warnings |
+| Customer enquiries | ![screenshot](documentation/lighthouse-testing/lh-customer-enquiries.png) | Minor Warnings |
+| Delete message | ![screenshot](documentation/lighthouse-testing/lh-contact-detail.png) | Minor Warnings |
+| FAQ | ![screenshot](documentation/lighthouse-testing/lh-faq.png) | Minor Warnings |
+| Register | ![screenshot](documentation/lighthouse-testing/lh-register.png) | Minor Warnings |
+| Login | ![screenshot](documentation/lighthouse-testing/lh-login.png) | Minor Warnings |
+| Logout | ![screenshot](documentation/lighthouse-testing/lh-logout.png) | Minor Warnings |
+| Bag | ![screenshot](documentation/lighthouse-testing/lh-bag.png) | Minor Warnings |
+| Checkout success | ![screenshot](documentation/lighthouse-testing/lh-checkout-success.png) | Minor Warnings |

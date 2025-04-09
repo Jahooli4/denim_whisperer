@@ -63,6 +63,8 @@ The footer section contains all relevant site and social media links. Account li
 The products page features a clean and simple layout making it easy for users to browse. The grid layour of products is responsive allowing the preview images to remain a good, visible size on all devices.
 
 ![Products](documentation/features/products.png)
+![Products](documentation/features/products-medium.png)
+![Products](documentation/features/products-mobile.png)
 
 ### Product detail page
 The product detail page features all the essential info a user could wish to know before buying an item. This includes a photo gallery, price, description, size category and quantity selection buttons. The page features an add to basket button as welll as a 'back to products' button.
@@ -79,13 +81,14 @@ The product detail page also displays the edit/delete buttons for admin users. T
 The contact page features a form that users may fill out to contact the site owner. The form submits to a database that can only be accessed by admin users.
 
 ![Contact page](documentation/features/contact.png)
+![Contact page](documentation/features/contact-medium.png)
 
 ### ADMIN ONLY - Customer enquiry list
 Visible only to admin, this page displays the list of contact requests submitted by users to the site user. As an admin user you are able to reply to the user's query using the form. Upon submission the form sends an email back to the user.
 
-![Customer enquiry list](documentation/enquiry-list.png)
-![Customer enquiry detail](documentation/enquiry-detail.png)
-![Customer enquiry response form](documentation/enquiry-response-form.png)
+![Customer enquiry list](documentation/features/enquiry-list.png)
+![Customer enquiry detail](documentation/features/enquiry-detail.png)
+![Customer enquiry response form](documentation/features/enquiry-response-form.png)
 
 
 ### About page
