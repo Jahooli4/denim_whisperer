@@ -222,3 +222,5 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+print ("stripe wh secret = " ,STRIPE_WH_SECRET)

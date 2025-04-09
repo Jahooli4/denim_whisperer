@@ -150,7 +150,7 @@ On all pages, Lighthouse is flagging a warning 'Issues were logged in the Issues
 | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse-testing/lh-home.png) | Minor Warnings |
 | Products | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
-| Product detail | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
+| Product detail | ![screenshot](documentation/lighthouse-testing/lh-register.png) | Minor Warnings |
 | Product add | ![screenshot](documentation/lighthouse-testing/lh-addproduct.png) | Minor Warnings |
 | Product delete | ![screenshot](documentation/lighthouse-testing/lh-products.png) | Minor Warnings |
 | About | ![screenshot](documentation/lighthouse-testing/lh-about.png) | Minor Warnings |
@@ -163,3 +163,35 @@ On all pages, Lighthouse is flagging a warning 'Issues were logged in the Issues
 | Logout | ![screenshot](documentation/lighthouse-testing/lh-logout.png) | Minor Warnings |
 | Bag | ![screenshot](documentation/lighthouse-testing/lh-bag.png) | Minor Warnings |
 | Checkout success | ![screenshot](documentation/lighthouse-testing/lh-checkout-success.png) | Minor Warnings |
+
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+## User testing
+| Feature being tested:| Steps                                | Expected outcome  | Pass/Fail |
+|:---------------------|:-------------------------------------|:------------------|-----|
+| Navigation - Logo | Click the logo on every page. | The logo should link the user back to the homepage, should be active on every page. | PASS |
+| Home page - UX | Read through the text. | The site purpose should be obvious to any user from reading the front page. | PASS |
+| About page - | Read over text. | Text should be legible and make sense. | PASS |
+| Shop/products page - | Load the products page | Products per line should vary based on screen size | PASS |
+| Product detail - | Click on any product | Link should take you to that product's page | PASS |
+| Product detail - | UX | Information displays clearly. | PASS |
+| Product detail - | Choose a size | Chosen size is selected | PASS |
+| Product detail - | Add to bag | Item adds to bag in chosen size and quantity, success message with bag preview displays. | PASS |
+| About page - | Choose a size | Chosen size is selected | PASS |
+| Footer - Social media icons | Click each one, test on each page. | Each link should change colour when hovered over and open in a new tab when clicked. | PASS |
+| Submit a spell page - | Fill out the spell submission page | Post is successfully created and success message displayed | PASS|
+| Submit a spell page - | Submit form without header image. | Post is successfully created and default header image applied. | PASS|
+| Post detail - | Load an idividual post. | Edit/delete buttons only visible to the post author. | PASS|
+| Edit post button - | Alter post fields. | Post is successfully updated and success message displayed | PASS|
+| Delete post button - | Delete post. | Post is successfully deleted and confirmation message displayed | PASS|
+| Register page - | Fill out the registration form. | New profile should be successfully created. | PASS |
+| Deafault profile image - | Create new account without a profile picture. | Account should be created with default profile image. | PASS |
+| Login page - | Login with invalid user details. | Access denied. | PASS |
+| Login page - | Login with valid user details. | Access granted and redirected to the home page. | PASS |
+| Profile page - | Load profile page as a logged in user. | User info is displayed correctly. | PASS| 
+| Profile page - | Click 'edit profile button. | Edit profile form is displayed. | PASS| 
+| Profile page - | Fill out edit profile form and submit. | User info is updated correctly. | PASS| 
+| Logout page - | Click logout link. | User is logged out correctly and message displays confirming this. | PASS| 
+| Responsiveness - UX | Resize site for all device sizes. | Check that images/text/other elements resize as expected, text should be readable and elements should all be visible and not overlap randomly. Repeat for every page. | PASS|
